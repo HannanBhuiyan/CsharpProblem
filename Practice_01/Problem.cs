@@ -321,13 +321,135 @@ namespace Practice_01
             {
                 Console.WriteLine(i);
             }
+			
+			
+			// problem 26:
+			
+			
+			 public static bool IsPrime(int n)
+			{
 
+				int x = (int)Math.Floor(Math.Sqrt(n));
+
+				if (n == 1)
+				{
+					return false;
+				}
+
+				for(int i = 2; i<= x; i++)
+				{
+					if(n % i == 0)
+					{
+						return false;
+					}
+				}
+
+				return true;
+
+			}
+
+			
+			
+			long sum = 0;
+            int count = 0;
+            int n = 2;
+
+            while (count < 500)
+            {
+                if (IsPrime(n))
+                {
+                    sum += n;
+                    count++;
+                }
+                n++;
+                    
+            }
+
+            Console.WriteLine(sum.ToString());
+			
+			============================= 
+			
+			  //Console.WriteLine("Enter number ");
+            //int n = int.Parse(Console.ReadLine());
+            //int sum = 0;
+            //int count = 0;
+            //for (int i = 3; i <= n; i++)
+            //{
+            //    int isPrime=0;
+
+            //    for (int j = 2; j <=  i/2; j++)
+            //    {
+            //        if (i % j == 0)
+            //        {
+            //            isPrime++;
+            //            break;
+            //        }
+            //    }
+            //    if (isPrime == 0 &&  i != 1 )
+            //    {
+            //        Console.WriteLine(i);
+            //        count += 1;
+            //        sum += i;
+            //    }
+            //}
+            //Console.WriteLine($"total {sum}");
+            //Console.WriteLine($"total number {count}");
+			
+			
+			// problem 27:
+			Console.WriteLine("Enter you number ");
+			int n = Convert.ToInt32(Console.ReadLine());
+			int sum = 0;
+			int temp = n;
+			int r;
+			while(temp != 0)
+			{
+				r = temp % 10;
+				sum += r;
+				temp = temp / 10;
+				
+				//sum += n % 10;
+				//n /= 10;
+			}
+
+			Console.WriteLine(sum);
+			
+
+			// problem 28:
+			string line = "Display the pattern like pyramid using the alphabet.";
+			//string[] words = line.Split(' ');
+			string[] words = line.Split(new[] { " " }, StringSplitOptions.None);
+			string joinArray = " ";
+			for (int i = words.Length - 1; i >= 0 ; --i)
+			{
+				joinArray += words[i] + " ";
+			}
+			Console.WriteLine(joinArray);
+			
+			
+			// problem 29:
+			string path = @"C:\Users\USER\source\repos\Demo.txt";
+            Console.WriteLine("File size : " + path.Length.ToString() + " Byte");
+			
+			// problem 30:
+			 string hexval = "4B0";
+            Console.WriteLine("Hexadecimal number: " + hexval);
+
+            int decVal = int.Parse(hexval, System.Globalization.NumberStyles.HexNumber);
+
+            Console.WriteLine(decVal);
 
 
              */
 
-
+               
+			
+			   
+			   
            
+
+             
+
 
             }
         }
