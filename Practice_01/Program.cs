@@ -11,7 +11,7 @@ namespace Practice_01
         static void Main(string[] args)
         {
 
-            Problem obj = new Problem();
+            Problem_01 obj = new Problem_01();
             obj.Result();
 
             Console.ReadKey();
