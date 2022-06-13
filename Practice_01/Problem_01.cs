@@ -118,10 +118,7 @@ namespace Practice_01
             Console.WriteLine("lowest number "+ Math.Min(num1, Math.Min(num2, num3)));
 
 
-
-             */
-
-
+            // problem 40:
             Console.WriteLine("Enter the first number: ");
             int num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the second number: ");
@@ -146,7 +143,12 @@ namespace Practice_01
                     Console.WriteLine(y);
                 }
             }
- 
+
+             */
+
+
+
+
 
 
 
