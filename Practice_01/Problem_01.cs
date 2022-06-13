@@ -89,7 +89,7 @@ namespace Practice_01
              Console.WriteLine(str.Substring(1, 2).Equals("HP") ? str.Remove(1,2) : str );
 
             // problem 38:
-            
+
             string str = "PHP Tutorial";
             string result = "";
 
@@ -97,7 +97,7 @@ namespace Practice_01
             {
                 result += str[0];
             } 
-            
+
             if(str.Length >= 2 && str[1] == 'H')
             {
                 result += str[1];
@@ -118,13 +118,13 @@ namespace Practice_01
             Console.WriteLine("lowest number "+ Math.Min(num1, Math.Min(num2, num3)));
 
 
- 
+
             // problem 40:
             Console.WriteLine("Enter the first number: ");
- 
-			// problem 39:
-		    Console.WriteLine("Enter the first number: ");
- 
+
+            // problem 39:
+            Console.WriteLine("Enter the first number: ");
+
             int num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the second number: ");
             int num2 = int.Parse(Console.ReadLine());
@@ -133,7 +133,7 @@ namespace Practice_01
             int val1 = Math.Abs(num1 - n); // 15
             int val2 = Math.Abs(num2 - n); // 5
 
-             
+
 
             if (val1 == val2)
             {
@@ -151,15 +151,15 @@ namespace Practice_01
                 }
             }
 
-             
-			// problem 41:
+
+            // problem 41:
             string str = Console.ReadLine();
 
             // way one
 
             var count = str.Count(s => s == 'w');
             Console.WriteLine(count >= 1 && count <= 3);
-             
+
 
             // way two
 
@@ -180,53 +180,134 @@ namespace Practice_01
             // }
 
 
-				// problem 42:
-				string str = Console.ReadLine();
+                // problem 42:
+                string str = Console.ReadLine();
+
+                if (str.Length <= 4)
+                {
+                    Console.WriteLine(str.ToUpper());
+                }else
+                {
+                    Console.WriteLine(str);
+                }
+
+
+                // problem 43:
+                string str = Console.ReadLine();
+                var count = str.Count(s => s == 'w');
+
+                if(str.StartsWith("w") && count <= 2)
+                {
+                    Console.WriteLine(true);
+                }else
+                {
+                    Console.WriteLine(false);
+                }
+
+                // problem 44:
+                string str = Console.ReadLine();
+
+                string res = string.Empty;
+
+                for(int i=0; i < str.Length; i+=2)
+                {
+                     res += str[i]; 
+                }
+                Console.WriteLine(res);
+
+
+
+             // problem 45:
+
+            Console.WriteLine("Enter an integer number :");
+            int num = int.Parse(Console.ReadLine());
+
+            int[] nums = { 1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 9 };
+
+            Console.WriteLine(nums.Count(x => x == num));
+
+
+            // problem 46:
+            Console.WriteLine("Enter an integer number :");
+            int x = int.Parse(Console.ReadLine());
+
+
+            int[] nums = { 1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 9, 10 };
+
+            int firstindex = nums[0];
+            int lastindex = nums[nums.Length - 1];
+
+            if(firstindex == x || lastindex == x)
+            {
+                Console.WriteLine(true);
+            }else
+            {
+                Console.WriteLine(false);
+            } 
+
+
+            // problem 47:
+            int[] arr =  {1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1};
+            int sum = 0;
+            for(int i = 0; i< arr.Length; i++)
+            {
+                sum += arr[i];
+            }
+            Console.WriteLine(sum);
+
+
+             // problem 48:
+             int[] nums = { 1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 55 };
+
+            int firstindex = nums[0];
+            int lastindex = nums[nums.Length - 1];
+
+            if (firstindex == lastindex && nums.Length >= 1)
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+
+
+             // problem 49:
+            int[] arr1 = new int[] { 1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1 };
+            int[] arr2 = new int[] { 10, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 5 };
+
+
+            int firstindexofarr1 = arr1[0];
+            int firstindexofarry2 = arr2[0];
+
+            if(firstindexofarr1 == firstindexofarry2 && arr1.Length >= 1 && arr2.Length >= 1)
+            {
+                Console.WriteLine(true);
+            }else
+            {
+                Console.WriteLine(false);
+            }
              
-				if (str.Length <= 4)
-				{
-					Console.WriteLine(str.ToUpper());
-				}else
-				{
-					Console.WriteLine(str);
-				}
+
+            // problem 50:
+
+            int[] arr = { 1, 2, 8, 10 };
+
+            int temp = arr[0];
+
+            for(int i =0; i < arr.Length - 1; i++)
+            {
+                arr[i] = arr[i + 1];
+            }
+
+            arr[arr.Length - 1] = temp;
+
+            Console.WriteLine($"[{string.Join(",", arr)}]");
 
 
-				// problem 43:
-				string str = Console.ReadLine();
-				var count = str.Count(s => s == 'w');
-
-				if(str.StartsWith("w") && count <= 2)
-				{
-					Console.WriteLine(true);
-				}else
-				{
-					Console.WriteLine(false);
-				}
-
-				// problem 44:
-				string str = Console.ReadLine();
-
-				string res = string.Empty;
-
-				for(int i=0; i < str.Length; i+=2)
-				{
-					 res += str[i]; 
-				}
-				Console.WriteLine(res);
- 
              */
 
-
-
-            Console.WriteLine("sadfsdafsda");
-
-
-
-
-
-
-
+             
 
 
         }
