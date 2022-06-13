@@ -118,37 +118,118 @@ namespace Practice_01
             Console.WriteLine("lowest number "+ Math.Min(num1, Math.Min(num2, num3)));
 
 
+<<<<<<< HEAD
             // problem 40:
             Console.WriteLine("Enter the first number: ");
+=======
+
+			// problem 39:
+		    Console.WriteLine("Enter the first number: ");
+>>>>>>> 8b3d8f90b53469738a8b1fc2bf785fec688d5e09
             int num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the second number: ");
             int num2 = int.Parse(Console.ReadLine());
 
             int n = 20;
-            int x = Math.Abs(num1 - n);
-            int y = Math.Abs(num2 - n);
+            int val1 = Math.Abs(num1 - n); // 15
+            int val2 = Math.Abs(num2 - n); // 5
 
-            if(num1 == num2)
+             
+
+            if (val1 == val2)
             {
                 Console.WriteLine(0);
-            } 
+            }
             else
             {
-                if (num1 < num2)
+                if (val1 < val2)
                 {
-                    Console.WriteLine(x);
+                    Console.WriteLine(num1);
                 }
                 else
                 {
-                    Console.WriteLine(y);
+                    Console.WriteLine(num2);
                 }
             }
 
+<<<<<<< HEAD
              */
 
 
 
 
+=======
+
+			 
+			// problem 41:
+            string str = Console.ReadLine();
+
+            // way one
+
+            var count = str.Count(s => s == 'w');
+            Console.WriteLine(count >= 1 && count <= 3);
+             
+
+            // way two
+
+            //int wcount = 0;
+            //for(int i=0; i< str.Length; i++)
+            // {
+            //     if(str[i] == 'w')
+            //     {
+            //         wcount++;
+            //     }
+            // }
+            //if(wcount >= 1 && wcount <= 3)
+            // {
+            //     Console.WriteLine(true);
+            // }else
+            // {
+            //     Console.WriteLine(false);
+            // }
+
+
+				// problem 42:
+				string str = Console.ReadLine();
+             
+				if (str.Length <= 4)
+				{
+					Console.WriteLine(str.ToUpper());
+				}else
+				{
+					Console.WriteLine(str);
+				}
+
+
+				// problem 43:
+				string str = Console.ReadLine();
+				var count = str.Count(s => s == 'w');
+
+				if(str.StartsWith("w") && count <= 2)
+				{
+					Console.WriteLine(true);
+				}else
+				{
+					Console.WriteLine(false);
+				}
+
+				// problem 44:
+				string str = Console.ReadLine();
+
+				string res = string.Empty;
+
+				for(int i=0; i < str.Length; i+=2)
+				{
+					 res += str[i]; 
+				}
+				Console.WriteLine(res);
+
+
+             */
+
+
+            
+>>>>>>> 8b3d8f90b53469738a8b1fc2bf785fec688d5e09
 
 
 
