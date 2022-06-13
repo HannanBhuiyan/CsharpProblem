@@ -426,6 +426,12 @@ namespace Practice_01
             Console.WriteLine(isOdd);
 
 
+			// problem 54:
+			Console.WriteLine("Enter year");
+            int year = int.Parse(Console.ReadLine());
+
+            Console.WriteLine((int)(year / 100) + ((year % 100 == 0) ? 0 : 1));
+            
 
              */
 
