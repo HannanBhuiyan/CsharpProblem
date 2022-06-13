@@ -118,14 +118,13 @@ namespace Practice_01
             Console.WriteLine("lowest number "+ Math.Min(num1, Math.Min(num2, num3)));
 
 
-<<<<<<< HEAD
+ 
             // problem 40:
             Console.WriteLine("Enter the first number: ");
-=======
-
+ 
 			// problem 39:
 		    Console.WriteLine("Enter the first number: ");
->>>>>>> 8b3d8f90b53469738a8b1fc2bf785fec688d5e09
+ 
             int num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the second number: ");
             int num2 = int.Parse(Console.ReadLine());
@@ -152,15 +151,7 @@ namespace Practice_01
                 }
             }
 
-<<<<<<< HEAD
-             */
-
-
-
-
-=======
-
-			 
+             
 			// problem 41:
             string str = Console.ReadLine();
 
@@ -223,13 +214,14 @@ namespace Practice_01
 					 res += str[i]; 
 				}
 				Console.WriteLine(res);
-
-
+ 
              */
 
 
-            
->>>>>>> 8b3d8f90b53469738a8b1fc2bf785fec688d5e09
+
+            Console.WriteLine("sadfsdafsda");
+
+
 
 
 
