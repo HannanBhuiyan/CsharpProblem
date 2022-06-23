@@ -12,3 +12,10 @@ C:\Users\USER\Desktop\C--Problem-solving-practice\Practice_01\obj\Debug\Practice
 C:\Users\USER\Desktop\C--Problem-solving-practice\Practice_01\obj\Debug\Practice_01.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\C--Problem-solving-practice\Practice_01\obj\Debug\Practice_01.exe
 C:\Users\USER\Desktop\C--Problem-solving-practice\Practice_01\obj\Debug\Practice_01.pdb
+H:\c#\ProblemSolvingPractice\Practice_01\bin\Debug\Practice_01.exe.config
+H:\c#\ProblemSolvingPractice\Practice_01\bin\Debug\Practice_01.exe
+H:\c#\ProblemSolvingPractice\Practice_01\bin\Debug\Practice_01.pdb
+H:\c#\ProblemSolvingPractice\Practice_01\obj\Debug\Practice_01.csproj.AssemblyReference.cache
+H:\c#\ProblemSolvingPractice\Practice_01\obj\Debug\Practice_01.csproj.CoreCompileInputs.cache
+H:\c#\ProblemSolvingPractice\Practice_01\obj\Debug\Practice_01.exe
+H:\c#\ProblemSolvingPractice\Practice_01\obj\Debug\Practice_01.pdb
